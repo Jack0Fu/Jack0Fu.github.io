@@ -105,7 +105,7 @@
 <meta property="og:image" content="http://yoursite.com/2019/09/12/test/mbc2_0510.png">
 <meta property="og:image" content="http://yoursite.com/2019/09/12/test/mbc2_0511.png">
 <meta property="og:image" content="http://yoursite.com/2019/09/12/test/mbc2_0513.png">
-<meta property="og:updated_time" content="2019-09-12T08:50:03.788Z">
+<meta property="og:updated_time" content="2019-09-14T13:42:54.457Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="test">
 <meta name="twitter:description" content="https://github.com/bitcoinbook/bitcoinbook/blob/develop/book.asciidoc Note_MasteringBitcoinPreface Per Wikipedia: “Next to humans, leafcutter ants form the largest and most complex animal societies on">
@@ -355,16 +355,18 @@
 <li>Can I be sure that no one else can claim this money belongs to them and not me?</li>
 </ol>
 <p>“Byzantine Generals’ Problem.” </p>
-<h2 id="Chapter-2-‘How-Bitcoin-Works‘"><a href="#Chapter-2-‘How-Bitcoin-Works‘" class="headerlink" title="Chapter 2 ‘How Bitcoin Works‘"></a>Chapter 2 ‘<a href="https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch02.asciidoc" target="_blank" rel="noopener">How Bitcoin Works</a>‘</h2><h3 id="Bitcoin-overview"><a href="#Bitcoin-overview" class="headerlink" title="Bitcoin overview"></a>Bitcoin overview</h3><h3 id><a href="#" class="headerlink" title></a><img src="mbc2_0201.png" alt="img"></h3><h3 id="Bitcoin-transactions"><a href="#Bitcoin-transactions" class="headerlink" title="Bitcoin transactions"></a>Bitcoin transactions</h3><h4 id="Transaction-input-and-output"><a href="#Transaction-input-and-output" class="headerlink" title="Transaction input and output"></a>Transaction input and output</h4><p>每笔交易是以复式记账法记录下来的，包括这笔交易资金的来源和去向。</p>
-<p><img src="mbc2_0203.png" alt="Transaction Double-Entry"></p>
+<h2 id="Chapter-2-‘How-Bitcoin-Works‘"><a href="#Chapter-2-‘How-Bitcoin-Works‘" class="headerlink" title="Chapter 2 ‘How Bitcoin Works‘"></a>Chapter 2 ‘<a href="https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch02.asciidoc" target="_blank" rel="noopener">How Bitcoin Works</a>‘</h2><h3 id="Bitcoin-overview"><a href="#Bitcoin-overview" class="headerlink" title="Bitcoin overview"></a>Bitcoin overview</h3><h3 id><a href="#" class="headerlink" title></a><img src="/2019/09/12/test/mbc2_0201.png" alt="img"></h3><a id="more"></a>
+
+<h3 id="Bitcoin-transactions"><a href="#Bitcoin-transactions" class="headerlink" title="Bitcoin transactions"></a>Bitcoin transactions</h3><h4 id="Transaction-input-and-output"><a href="#Transaction-input-and-output" class="headerlink" title="Transaction input and output"></a>Transaction input and output</h4><p>每笔交易是以复式记账法记录下来的，包括这笔交易资金的来源和去向。</p>
+<p><img src="/2019/09/12/test/mbc2_0203.png" alt="Transaction Double-Entry"></p>
 <h3 id="Bitcoin-chains"><a href="#Bitcoin-chains" class="headerlink" title="Bitcoin chains"></a>Bitcoin chains</h3><p>output of one transaction is the input of the next transaction</p>
 <p>==In summary==, <em>transactions</em> move value from <em>transaction inputs</em> to <em>transaction outputs</em>. An input is a reference to a previous transaction’s output, showing where the value is coming from. A transaction output directs a specific value to a new owner’s bitcoin address and can include a change output back to the original owner. Outputs from one transaction can be used as inputs in a new transaction, thus creating a chain of ownership as the value is moved from owner to owner</p>
 <p>在交易中，也会出现你上笔交易你收到了0.1BTC ,然后作为下笔交易（你要支付0.05BTC）的输入，那么你会零钱退还，但是地址会有变化，不会再退回到原地址了</p>
-<p><img src="mbc2_0204.png" alt="Transaction chain"></p>
+<p><img src="/2019/09/12/test/mbc2_0204.png" alt="Transaction chain"></p>
 <h3 id="Common-Transaction-Forms"><a href="#Common-Transaction-Forms" class="headerlink" title="Common Transaction Forms"></a>Common Transaction Forms</h3><p>三种常见的交易形式（从输入和输出角度看）</p>
-<p><img src="mbc2_0205.png" alt="Common Transaction"></p>
-<p><img src="mbc2_0206.png" alt="Aggregating Transaction"></p>
-<p><img src="mbc2_0207.png" alt="Distributing Transaction"></p>
+<p><img src="/2019/09/12/test/mbc2_0205.png" alt="Common Transaction"></p>
+<p><img src="/2019/09/12/test/mbc2_0206.png" alt="Aggregating Transaction"></p>
+<p><img src="/2019/09/12/test/mbc2_0207.png" alt="Distributing Transaction"></p>
 <h3 id="Bitcoin-Mining"><a href="#Bitcoin-Mining" class="headerlink" title="Bitcoin Mining"></a>Bitcoin Mining</h3><p> The mining process serves two purposes in bitcoin: （挖矿有两个目的：验证交易和发行新币）</p>
 <ul>
 <li><p>Mining nodes validate all transactions by reference to bitcoin’s <em>consensus rules</em>. Therefore, mining provides security for bitcoin transactions by rejecting invalid or malformed transactions.</p>
@@ -374,7 +376,7 @@
 </li>
 </ul>
 <p>As follows,Each block mined on top of the one containing the transaction counts as an additional confirmation for Alice’s transaction. As the blocks pile on top of each other, it becomes exponentially harder to reverse the transaction, thereby making it more and more trusted by the network.</p>
-<p><img src="mbc2_0209.png" alt="Aliceâs transaction included in a block"></p>
+<p><img src="/2019/09/12/test/mbc2_0209.png" alt="Aliceâs transaction included in a block"></p>
 <h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><p>In this chapter, we saw how transactions build a chain that moves value from owner to owner. We also tracked Alice’s transaction, from the moment it was created in her wallet, through the bitcoin network and to the miners who recorded it on the blockchain. In the rest of this book, we will examine the specific technologies behind wallets, addresses, signatures, transactions, the network, and finally mining.</p>
 <h3 id="Chapter-3-‘Bitcoin-Core-The-Reference-Implementation‘"><a href="#Chapter-3-‘Bitcoin-Core-The-Reference-Implementation‘" class="headerlink" title="Chapter 3 ‘Bitcoin Core: The Reference Implementation‘"></a>Chapter 3 ‘<a href="https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch03.asciidoc" target="_blank" rel="noopener">Bitcoin Core: The Reference Implementation</a>‘</h3><h2 id="Dependencies"><a href="#Dependencies" class="headerlink" title="Dependencies"></a>Dependencies</h2><p>These dependencies are required:</p>
 <table>
@@ -447,7 +449,7 @@
 </tr>
 </tbody></table>
 <p>编译过程出现的问题：</p>
-<p> Config file: /home/lab326/.bitcoin/bitcoin.conf (not found, skipping)<img src="1567339316541.png" alt="1567339316541"></p>
+<p> Config file: /home/lab326/.bitcoin/bitcoin.conf (not found, skipping)<img src="/2019/09/12/test/1567339316541.png" alt="1567339316541"></p>
 <p>(<a href="https://en.bitcoin.it/wiki/Running_Bitcoin" target="_blank" rel="noopener">https://en.bitcoin.it/wiki/Running_Bitcoin</a>) 上面这么说：The configuration file is not automatically created; you can create it using your favorite plain-text editor.</p>
 <p><a href="https://jlopp.github.io/bitcoin-core-config-generator/" target="_blank" rel="noopener">https://jlopp.github.io/bitcoin-core-config-generator/</a>  根据配置自动生成bitcoin.conf文件</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">lab326@lab326:~/fqw/bitcoin$ bitcoin-cli getnetworkinfo</span><br><span class="line">&#123;</span><br><span class="line">  "version": 180100,</span><br><span class="line">  "subversion": "/Satoshi:0.18.1/",</span><br><span class="line">  "protocolversion": 70015,</span><br><span class="line">  "localservices": "000000000000040d",</span><br><span class="line">  "localrelay": true,</span><br><span class="line">  "timeoffset": -1,</span><br><span class="line">  "networkactive": true,</span><br><span class="line">  "connections": 5,</span><br><span class="line">  "networks": [</span><br><span class="line">    &#123;</span><br><span class="line">      "name": "ipv4",</span><br><span class="line">      "limited": false,</span><br><span class="line">      "reachable": true,</span><br><span class="line">      "proxy": "",</span><br><span class="line">      "proxy_randomize_credentials": false</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">      "name": "ipv6",</span><br><span class="line">      "limited": false,</span><br><span class="line">      "reachable": true,</span><br><span class="line">      "proxy": "",</span><br><span class="line">      "proxy_randomize_credentials": false</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">      "name": "onion",</span><br><span class="line">      "limited": true,</span><br><span class="line">      "reachable": false,</span><br><span class="line">      "proxy": "",</span><br><span class="line">      "proxy_randomize_credentials": false</span><br><span class="line">    &#125;</span><br><span class="line">  ],</span><br><span class="line">  "relayfee": 0.00001000,</span><br><span class="line">  "incrementalfee": 0.00001000,</span><br><span class="line">  "localaddresses": [</span><br><span class="line">  ],</span><br><span class="line">  "warnings": ""</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -458,7 +460,7 @@
 <h3 id="Addressed"><a href="#Addressed" class="headerlink" title="Addressed"></a>Addressed</h3><p>In most cases, a bitcoin address is generated from and corresponds to a public key. However, not all bitcoin addresses represent public keys; they can also represent other beneficiaries such as scripts</p>
 <p>A bitcoin address is a string of digits and characters that can be shared with anyone who wants to send you money. Addresses produced from public keys consist of a string of numbers and letters, <strong>beginning with the digit “1.”</strong></p>
 <p>he algorithms used to make a bitcoin address from a public key are the Secure Hash Algorithm (SHA) and the RACE Integrity Primitives Evaluation Message Digest (RIPEMD), specifically <strong>SHA256</strong> and <strong>RIPEMD160</strong>.<br>$$<br>\begin{equation}<br>{A = RIPEMD160(SHA256(K))}<br>\end{equation}<br>$$<br>where <em>K</em> is the public key and <em>A</em> is the resulting bitcoin address.</p>
-<p><img src="mbc2_0405.png" alt="pubkey_to_address"></p>
+<p><img src="/2019/09/12/test/mbc2_0405.png" alt="pubkey_to_address"></p>
 <p> Base64 representation uses 26 lowercase letters, 26 capital letters, 10 numerals, and 2 more characters such as “``&#x201d; and “/“ to transmit binary data over text-based media such as email. </p>
 <p>Base58 is the subset of Base64.  Base58 is Base64 without the 0 (number zero), O (capital o), l (lower L), I (capital i), and the symbols &#x201c;``” and “/“.</p>
 <p> Bitcoin’s Base58 alphabet</p>
@@ -470,7 +472,7 @@
 <p>In bitcoin, we use public key cryptography to create a key pair that controls access to bitcoin. The key pair consists of a private key and—derived from it—a unique public key. The public key is used to receive funds, and the private key is used to sign transactions to spend the funds.</p>
 <p>私钥用椭圆曲线算法推导出公钥，公钥再用哈希算法推导出地址，均是不可逆的。</p>
 <p>A bitcoin wallet contains a collection of key pairs, each consisting of a private key and a public key. The private key (k) is a number, usually picked at random. From the private key, we use elliptic curve multiplication, a one-way cryptographic function, to generate a public key (K). From the public key (K), we use a one-way cryptographic hash function to generate a bitcoin address (A).</p>
-<p><img src="mbc2_0401.png" alt="privk_to_pubK_to_addressA"><br>$$<br>\begin{equation}<br>{K = k * G}<br>\end{equation}<br>$$<br> Base64 representation uses 26 lowercase letters, 26 capital letters, 10 numerals, and 2 more characters such as “``&#x201d; and “/“ to transmit binary data over text-based media such as email.        </p>
+<p><img src="/2019/09/12/test/mbc2_0401.png" alt="privk_to_pubK_to_addressA"><br>$$<br>\begin{equation}<br>{K = k * G}<br>\end{equation}<br>$$<br> Base64 representation uses 26 lowercase letters, 26 capital letters, 10 numerals, and 2 more characters such as “``&#x201d; and “/“ to transmit binary data over text-based media such as email.        </p>
 <p>疑问：根据私钥生成公钥，再根据公钥生成地址。那么同样的私钥就一定会生成同样的地址。怎么保证私钥的唯一性，就比如我现在有了一个私钥，我怎么知道它是不是唯一的？如果它不是唯一的，那我生成的地址就是别人已有的地址了，那我要转账给我这个地址的话不就出现冲突了吗？</p>
 <p>这是 如何解决的呢？？</p>
 <p><a href="http://www.ruanyifeng.com/blog/2018/09/hash-collision-and-birthday-attack.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2018/09/hash-collision-and-birthday-attack.html</a></p>
@@ -489,11 +491,11 @@
 <li><em>deterministic wallet*：助记词当做种子，可以推导出所有的秘钥（ *hierarchical deterministic</em> or <em>HD</em> wallet.）</li>
 </ul>
 <h4 id="Nondeterministic-Random-Wallets"><a href="#Nondeterministic-Random-Wallets" class="headerlink" title="Nondeterministic (Random) Wallets"></a>Nondeterministic (Random) Wallets</h4><p> Type-0 nondeterministic (random) wallet: a collection of randomly generated keys</p>
-<p><img src="mbc2_0501.png" alt="Non-Deterministic Wallet"></p>
+<p><img src="/2019/09/12/test/mbc2_0501.png" alt="Non-Deterministic Wallet"></p>
 <h4 id="Deterministic-Seeded-Wallets"><a href="#Deterministic-Seeded-Wallets" class="headerlink" title="Deterministic (Seeded) Wallets"></a>Deterministic (Seeded) Wallets</h4><p>Type-1 deterministic (seeded) wallet: a deterministic sequence of keys derived from a seed</p>
-<p><img src="mbc2_0502.png" alt="Deterministic Wallet"></p>
+<p><img src="/2019/09/12/test/mbc2_0502.png" alt="Deterministic Wallet"></p>
 <p>Type-2 HD wallet: a tree of keys generated from a single seed</p>
-<p><img src="mbc2_0503.png" alt="HD wallet"></p>
+<p><img src="/2019/09/12/test/mbc2_0503.png" alt="HD wallet"></p>
 <p>These common standards are:</p>
 <ul>
 <li>Mnemonic code words, based on BIP-39</li>
@@ -513,7 +515,7 @@
 <li>Map each 11-bit value to a word from the predefined dictionary of 2048 words.</li>
 <li>The mnemonic code is the sequence of words.</li>
 </ol>
-<p><img src="mbc2_0506.png" alt="Generating entropy and encoding as mnemonic words"></p>
+<p><img src="/2019/09/12/test/mbc2_0506.png" alt="Generating entropy and encoding as mnemonic words"></p>
 <ul>
 <li><h5 id="From-mnemonic-to-seed"><a href="#From-mnemonic-to-seed" class="headerlink" title="From mnemonic to seed"></a>From mnemonic to seed</h5></li>
 </ul>
@@ -522,12 +524,12 @@
 <li>The second parameter to the PBKDF2 key-stretching function is a <em>salt</em>. The salt is composed of the string constant “<code>mnemonic</code>“ concatenated with an optional user-supplied passphrase string.</li>
 <li>PBKDF2 stretches the mnemonic and salt parameters using 2048 rounds of hashing with the HMAC-SHA512 algorithm, producing a 512-bit value as its final output. That 512-bit value is the seed.</li>
 </ol>
-<p><img src="mbc2_0507.png" alt="From mnemonic to seed"></p>
+<p><img src="/2019/09/12/test/mbc2_0507.png" alt="From mnemonic to seed"></p>
 <p>Creating master keys and chain code from a root seed</p>
-<p><img src="mbc2_0509.png" alt="HDWalletFromRootSeed"></p>
+<p><img src="/2019/09/12/test/mbc2_0509.png" alt="HDWalletFromRootSeed"></p>
 <p>Extending a parent private key to create a child private key</p>
 <p>索引数字由32位二进制数组成，每个父私钥能够生成$2^{31}$ 个子私钥，即$2^{32}$ 的一半，剩下的一半另有他用。</p>
-<p><img src="mbc2_0510.png" alt="ChildPrivateDerivation"></p>
+<p><img src="/2019/09/12/test/mbc2_0510.png" alt="ChildPrivateDerivation"></p>
 <p>the key derivation function can be used to create children at any level of the tree, based on the three inputs: <strong>a key, a chain code, and the index of the desired child</strong>. The two essential ingredients are the key and chain code, and combined these are called an <strong><em>extended key</em>.</strong></p>
 <p>2种扩展密钥：</p>
 <ul>
@@ -537,10 +539,10 @@
 </li>
 </ul>
 <p>Extending a parent public key to create a child public key</p>
-<p><img src="mbc2_0511.png" alt="ChildPublicDerivation"></p>
+<p><img src="/2019/09/12/test/mbc2_0511.png" alt="ChildPublicDerivation"></p>
 <p> A single leaked child private key, together with a parent chain code, reveals all the private keys of all the children. Worse, the child private key together with a parent chain code can be used to deduce the parent private key.？？？？？？？？？？？？？</p>
 <p><strong>Hardened derivation of a child key;</strong> omits the parent public key</p>
-<p><img src="mbc2_0513.png" alt="ChildHardPrivateDerivation"></p>
+<p><img src="/2019/09/12/test/mbc2_0513.png" alt="ChildHardPrivateDerivation"></p>
 <p>The index number used in the derivation function is a 32-bit integer. The index number used in the derivation function is a 32-bit integer. </p>
 <p>The first normal child key is therefore displayed as 0, whereas the first hardened child (index 0x80000000) is displayed as 0&#x27;.</p>
 <p> In sequence then, the second hardened key would have index 0x80000001 and would be displayed as 1&#x27;, </p>
